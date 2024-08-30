@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1b1b1b;
+  height: 100%;
+}
+
+.foreground-neuron {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(#4a3ef4, #7ad7f6);
+  box-shadow: 0 0 250px #7ad7f6;
+}
+
+.background-neuron {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(#7ad7f6, #d8f6fa);
+  box-shadow: 0 0 250px #7ad7f6;
+}
+
+.synapse {
+  fill: transparent;
+  stroke-width: 2;
+  stroke: #ffffff;
+  stroke-dashoffset: 0;
+  stroke-width: 15px;
+  animation: brainStorm 3s linear infinite
+}
+
+.glow {
+  font-size: 20px;
+  color: #fff;
+  fill: #ccebf6;
+  text-align: center;
+  font: bold 20px sans-serif;
+  text-shadow: 0 0 20px #fff, 0 0 30px #7ad7f6, 0 0 40px #7ad7f6, 0 0 50px #8982f8, 0 0 60px #4a3ef4, 0 0 70px #4a3ef4, 0 0 80px #4a3ef4
+}
+
+.title { 
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  font: bold 15px sans-serif;
+}
+.centeredText {
+  font-size: 15px;
+  color: #fff;
+  fill: #ccebf6;
+  text-align: center;
+  font: bold 15px sans-serif;
+  margin-left: -250px;
+}
+
+.alignedText {
+  font-size: 15px;
+  color: #fff;
+  fill: #ccebf6;
+  text-align: center;
+  font: bold 15px sans-serif;
+  margin-left: -500px;
+}
+
+.simpleText {
+  font-size: 15px;
+  color: #fff;
+  fill: #ccebf6;
+  font: bold 15px sans-serif;
+  margin-left: 260px;
+}
+
+@keyframes brainStorm {
+  0% {
+    stroke: #ffffff;
+    stroke-width: 2;
+  }
+
+  50% {
+    stroke: #77d7f7;
+    stroke-width: 3;
+  }
+
+  100% {
+    stroke: #ffffff;
+    stroke-width: 2;
+  }
+}
+
+.svgUpAndDown {
+  animation: upToDown 3s infinite;
+}
+
+@keyframes upToDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
