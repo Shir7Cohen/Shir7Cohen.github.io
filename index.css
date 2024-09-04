@@ -11,6 +11,8 @@
   min-height: 100vh;
   background: #1b1b1b;
   height: 100%;
+  height: auto;
+  overflow: scroll;
 }
 
 .foreground-neuron {
@@ -47,28 +49,19 @@
   text-shadow: 0 0 20px #fff, 0 0 30px #7ad7f6, 0 0 40px #7ad7f6, 0 0 50px #8982f8, 0 0 60px #4a3ef4, 0 0 70px #4a3ef4, 0 0 80px #4a3ef4
 }
 
-.title { 
+.title {
   color: #fff;
   fill: #fff;
   text-align: center;
-  font: bold 15px sans-serif;
-}
-.centeredText {
-  font-size: 15px;
-  color: #fff;
-  fill: #ccebf6;
-  text-align: center;
-  font: bold 15px sans-serif;
-  margin-left: -250px;
+  font: bold 17px sans-serif;
 }
 
-.alignedText {
+.innerTitle {
   font-size: 15px;
   color: #fff;
   fill: #ccebf6;
   text-align: center;
   font: bold 15px sans-serif;
-  margin-left: -500px;
 }
 
 .simpleText {
@@ -76,7 +69,6 @@
   color: #fff;
   fill: #ccebf6;
   font: bold 15px sans-serif;
-  margin-left: 260px;
 }
 
 @keyframes brainStorm {
@@ -96,20 +88,29 @@
   }
 }
 
-.svgUpAndDown {
-  animation: upToDown 3s infinite;
+.myUl {
+  list-style-type: none;
 }
 
-@keyframes upToDown {
-  0% {
-    transform: translateY(0);
+/* on narow screen hide*/
+@media screen and (max-width: 350px) {
+  #maxContantSvg1 {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
   }
-
-  50% {
-    transform: translateY(-30px);
-  }
-
-  100% {
-    transform: translateY(0);
+}
+/* on narow screen hide*/
+@media screen and (max-width: 350px) {
+  #maxContantSvg2 {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
   }
 }
